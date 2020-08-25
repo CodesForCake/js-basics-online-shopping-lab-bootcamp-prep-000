@@ -19,10 +19,13 @@ function addToCart(item) {
 }
 
 function viewCart() {
+  var cartItems=""
   if (cart.length>0){
-    
+    for (let i=0; i<cart.length;i++) {
+      
+    }
   } else {
-    return ""
+    return "Your shopping cart is empty."
   }
 }
 
