@@ -38,6 +38,7 @@ function total() {
   for (let i=0; i<cart.length; i++) {
     totalbill+=cart[i].itemPrice;
   }
+  return totalbill;
 }
 
 function removeFromCart(item) {
