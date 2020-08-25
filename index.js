@@ -26,6 +26,7 @@ function viewCart() {
       eachItem=`${cart[i].itemName} at ${cart[i].itemPrice}`
     }
     cartItems += eachItem.join(", ")
+    return cartItems;
   } else {
     return "Your shopping cart is empty."
   }
