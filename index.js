@@ -19,12 +19,13 @@ function addToCart(item) {
 }
 
 function viewCart() {
-  var cartItems="In your cart, you have "
-  var eachItem=[]
+  var cartItems="In your cart, you have ";
+  var eachItem=[];
   if (cart.length>0){
     for (let i=0; i<cart.length;i++) {
-      var 
+      eachItem=`${cart[i].itemName} at ${cart[i].itemPrice}`
     }
+    
   } else {
     return "Your shopping cart is empty."
   }
