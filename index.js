@@ -55,6 +55,8 @@ function placeOrder(cardNumber) {
   if (cardNumber !== undefined) {
     cart = [];
     var totalbill=total();
-    return `Your total cost is ${totalbill}, 
+    return `Your total cost is ${totalbill}, which will be charged to the card ${cardNumber}.`
+  } else {
+    
   }
 }
