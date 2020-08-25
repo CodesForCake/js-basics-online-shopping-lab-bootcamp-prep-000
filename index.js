@@ -23,7 +23,10 @@ function viewCart() {
   var eachItem=[];
   if (cart.length>0){
     for (let i=0; i<cart.length;i++) {
-      eachItem[i]=`${cart[i].itemName} at $${cart[i].itemPrice}`
+      cartItems=cartItems+`${cart[i].itemName} at $${cart[i].itemPrice}`
+      if (i+1===cart.length) {
+        cartItems=cartItems+", and "
+      } else if (0<i+1<cart.length)
     }
     cartItems += eachItem.join(", ");
     console.log(cartItems);
