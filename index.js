@@ -54,6 +54,7 @@ function removeFromCart(item) {
 function placeOrder(cardNumber) {
   if (cardNumber !== undefined) {
     cart = [];
-    return `
+    var totalbill=total();
+    return `Your total cost is ${totalbill}, 
   }
 }
