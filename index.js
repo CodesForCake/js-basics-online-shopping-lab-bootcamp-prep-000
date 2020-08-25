@@ -12,7 +12,7 @@ function setCart(c) {
 function addToCart(item) {
   var itemDetails={};
   itemDetails["itemName"]=item;
-  itemDetails["itemPrice"]=Math.random()*100;
+  itemDetails["itemPrice"]=Math.floor(Math.random()*100);
   console.log(itemDetails);
   cart.push(itemDetails);
   return `${item} has been added to your cart.`
@@ -23,7 +23,7 @@ function viewCart() {
   var eachItem=[];
   if (cart.length>0){
     for (let i=0; i<cart.length;i++) {
-      eachItem[i]=`${cart[i].itemName} at ${cart[i].itemPrice}`
+      eachItem[i]=`${cart[i].itemName} at $${cart[i].itemPrice}`
     }
     cartItems += eachItem.join(", ");
     console.log(cartItems);
