@@ -20,7 +20,6 @@ function addToCart(item) {
 
 function viewCart() {
   var cartItems="In your cart, you have ";
-  var eachItem=[];
   if (cart.length>0){
     for (let i=0; i<cart.length;i++) {
       cartItems=cartItems+`${cart[i].itemName} at $${cart[i].itemPrice}`
@@ -30,7 +29,6 @@ function viewCart() {
         cartItems=cartItems+", "
       }
     }
-    cartItems += eachItem.join(", ");
     console.log(cartItems);
     return cartItems;
   } else {
