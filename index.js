@@ -25,7 +25,7 @@ function viewCart() {
       cartItems=cartItems+`${cart[i].itemName} at $${cart[i].itemPrice}`
       if (i+1===cart.length) {
         cartItems=cartItems+", and "
-      } else if (i+1<cart.length && i+1>0){
+      } else if (i+1<cart.length && i+1>1){
         cartItems=cartItems+", "
       }
     }
