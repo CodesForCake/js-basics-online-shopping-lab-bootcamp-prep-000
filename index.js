@@ -25,7 +25,7 @@ function viewCart() {
     for (let i=0; i<cart.length;i++) {
       eachItem=`${cart[i].itemName} at ${cart[i].itemPrice}`
     }
-    
+    cartItems += eachItem.join(", ")
   } else {
     return "Your shopping cart is empty."
   }
