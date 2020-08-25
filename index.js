@@ -24,7 +24,7 @@ function viewCart() {
     for (let i=0; i<cart.length;i++) {
       cartItems=cartItems+`${cart[i].itemName} at $${cart[i].itemPrice}`
       if (i+1===cart.length) {
-        if (i=0){
+        if (i===0){
           cartItems=cartItems+".";
           return cartItems;
         } else {
