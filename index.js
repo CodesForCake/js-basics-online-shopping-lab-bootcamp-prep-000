@@ -24,12 +24,16 @@ function viewCart() {
     for (let i=0; i<cart.length;i++) {
       cartItems=cartItems+`${cart[i].itemName} at $${cart[i].itemPrice}`
       if (i+1===cart.length) {
-        cartItems=cartItems+", and "
+        if (i=0){
+          cartItems=cartItems+".";
+          return cartItems;
+        } else {
+          cartItems=cartItems+", and "
+        }
       } else if (i+1<cart.length && i+1>1){
         cartItems=cartItems+", "
       }
     }
-    console.log(cartItems);
     return cartItems;
   } else {
     return "Your shopping cart is empty."
