@@ -23,7 +23,13 @@ function viewCart() {
   if (cart.length>0){
     for (let i=0; i<cart.length;i++) {
       cartItems=cartItems+`${cart[i].itemName} at $${cart[i].itemPrice}`
-      if (i+1===cart.length) {
+      //adding in last item, period
+      //adding in second to last item, period + and
+      //cart's only 1 item long? neither.
+      if((cart.length===1)||(cart.length==i+1)) {
+        cartItems=cartItems+".";
+      } else if (cart.length===2 && i===)
+      if (i+2===cart.length) {
         if (i===0){
           cartItems=cartItems+".";
           return cartItems;
