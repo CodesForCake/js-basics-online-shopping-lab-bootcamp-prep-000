@@ -24,18 +24,13 @@ function viewCart() {
     for (let i=0; i<cart.length;i++) {
       cartItems=cartItems+`${cart[i].itemName} at $${cart[i].itemPrice}`
       //adding in last item, period
-      //adding in second to last item, period + and
+      //adding in second to last item, comma and
+      //other items, comma only
       //cart's only 1 item long? neither.
       if((cart.length===1)||(cart.length==i+1)) {
         cartItems=cartItems+".";
-      } else if (cart.length===2 && i===)
-      if (i+2===cart.length) {
-        if (i===0){
-          cartItems=cartItems+".";
-          return cartItems;
-        } else {
-          cartItems=cartItems+", and "
-        }
+      } else if (cart.length===i+2){
+        cartItems=cartItems+", and "
       } else {
         cartItems=cartItems+", "
       }
