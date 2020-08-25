@@ -30,7 +30,7 @@ function viewCart() {
         } else {
           cartItems=cartItems+", and "
         }
-      } else if (i+1<cart.length && i+1>1){
+      } else {
         cartItems=cartItems+", "
       }
     }
